@@ -1,0 +1,171 @@
+.background {
+    background-image: url(images/background.jpg);
+    position: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+body {
+    color: #fff4e4;
+    font-family: 'Verdana', sans-serif;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width:auto;
+    height: 250px;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:relative;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0px 25px 0px 0px;
+    padding: 50px 0px 15px 90px;
+}
+
+.intro {
+    font-size: 2vw;
+}
+.presentation {
+    max-width: 80%;
+    text-align: center;
+    font-size: larger;
+    line-height: 1.8;
+    font-weight: bold;
+    padding: 0 60px 10px 60px;
+    text-shadow: -1px 0 rgb(55, 55, 55), 0 1px rgb(55, 55, 55), 1px 0 rgb(55, 55, 55), 0 -1px rgb(55, 55, 55);
+}
+
+.containerfavicon {
+    margin-left: 15px;
+}
+
+.favicon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-color: #D3C2C2;
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.two {
+    display:flex;
+    flex-direction: column;
+    height:auto;
+}
+
+.containerproject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.project {
+    box-shadow: 0px 5px 10px 8px rgb(0 0 0 / 20%);
+    border: 5xp solid transparent;
+    border-radius:25px;
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.project.reveal.active:hover {
+    transform: scale(1.1,1.1)
+}
+
+.imageproject {
+    max-height: 80%;
+    max-width: 80%;
+    /* border:  5px solid rgb(221, 226, 237); */
+    border-radius: 25px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.containerimageproject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.description {
+    display:grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    align-items: center;
+    width: 50%;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+
+.three {
+    display:flex;
+    justify-content: center;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    justify-items:center;
+    margin-top: 20px;
+    text-shadow: -1px 0 rgb(55, 55, 55), 0 1px rgb(55, 55, 55), 1px 0 rgb(55, 55, 55), 0 -1px rgb(55, 55, 55);
+    line-height: 1.2;
+
+}
+
+.fourth {
+    display: flex;    
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin-top: 20px;
+    text-shadow: -1px 0 rgb(55, 55, 55), 0 1px rgb(55, 55, 55), 1px 0 rgb(55, 55, 55), 0 -1px rgb(55, 55, 55);
+    line-height: 1.2;
+
+}
+
+.email {
+    margin-top: 4px;
+    width:53px; 
+    height:auto
+}
+
+/* slide effects */
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.a.githubfav:hover {
+    transform:scale (1.2,1.2)
+}
